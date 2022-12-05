@@ -1,0 +1,14 @@
+package com.example.demo.repo;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.demo.modal.product_category;
+
+
+
+
+
+public interface product_categoryRepo extends JpaRepository<product_category, Integer>{
+
+}

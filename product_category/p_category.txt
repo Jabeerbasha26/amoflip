@@ -1,0 +1,43 @@
+package com.example.demo.modal;
+
+
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="product_category")
+public class product_category {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int p_id;
+	@Column(name = "p_name")
+        private String p_name;
+    
+	public product_category() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public product_category(int p_id, String p_name) {
+		super();
+		this.p_id = p_id;
+		this.p_name = p_name;
+	}
+	public String getp_name() {
+		return p_name;
+	}
+	public void setp_name(String p_name) {
+		this.p_name = p_name;
+	}
+
+	public int getp_id() {
+		return p_id;
+	}
+	
+    
+}
